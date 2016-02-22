@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+  This plugin sends the notifications about the build informatoin to Agile-Cockpit.
+</div>
