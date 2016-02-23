@@ -13,6 +13,9 @@ package org.jenkinsci.plugins.cockpitnotification;
  * License for the specific language governing permissions and limitations under
  * the License.
  */
+import com.google.gson.FieldNamingPolicy;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.DatagramPacket;
@@ -83,16 +86,11 @@ public enum Protocol {
                 connection = (HttpURLConnection) targetUrl.openConnection(proxy);
             }
 
-            connection.setRequestProperty("Content-Type", String.format("application/%s;charset=UTF-8", isJson ? "json" : "xml"));
-
-            try 
-            {
-                TripleDES tripleDes = new TripleDES(encryptionkey, vectorkey);
-                connection.setRequestProperty("Authorization", "Basic " + tripleDes.encryptText(teamtoken));
-            } catch (Exception ex) {
-                throw new RuntimeException(String.format("Error while encrypting {0}", ex.getMessage()));
-            }
-
+            //connection.setRequestProperty("Content-Type", String.format("application/%s;charset=UTF-8", isJson ? "json" : "xml"));
+            
+            connection.setRequestProperty("Content-Type", "text/plain;charset=UTF-8");
+            connection.setRequestProperty("Authorization", "Basic " + teamtoken);
+            
             connection.setFixedLengthStreamingMode(data.length);
             connection.setDoInput(true);
             connection.setDoOutput(true);
