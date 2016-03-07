@@ -34,10 +34,11 @@ public class BuildState {
     private String userid;
     private String shortdescription;
     private String username;
-    
+
     public String getShortDescription() {
         return this.shortdescription;
     }
+
     public void setShorttDescription(String shortdescription) {
         this.shortdescription = this.shortdescription;
     }
@@ -45,6 +46,7 @@ public class BuildState {
     public String getUserId() {
         return this.userid;
     }
+
     public void setUserId(String userId) {
         this.userid = userId;
     }
@@ -52,6 +54,7 @@ public class BuildState {
     public String getUserName() {
         return this.username;
     }
+
     public void setUserName(String username) {
         this.username = username;
     }
@@ -127,11 +130,17 @@ public class BuildState {
     public void setLog(StringBuilder log) {
         this.log = log;
     }
+
+    public void setBuildCauses(Cause.UserIdCause cause) {
+        this.shortdescription = cause.getShortDescription();
+        this.userid = cause.getUserId();
+        this.username = cause.getUserName();
+    }
     
-    public  void setBuildCauses(Cause.UserIdCause cause)
+    public void setBuildCausedAutomatically(String shortDescription)
     {
-        this.shortdescription=cause.getShortDescription();
-        this.userid = cause.getUserId() ;
-        this.username=cause.getUserName();
+        this.userid = "";
+        this.username = shortDescription;
+        this.shortdescription = shortDescription + ". This build was automatically triggered.";
     }
 }
