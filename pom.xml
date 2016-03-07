@@ -26,9 +26,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:https://github.com/prakashan-prowareness/agile-cockpit-notification-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:prakashan-prowareness/agile-cockpit-notification-plugin.git</developerConnection>
-    <url>https://github.com/prakashan-prowareness/agile-cockpit-notification-plugin</url>
+    <connection>scm:git:https://github.com/jenkinsci/agile-cockpit-notification-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:jenkinsci/agile-cockpit-notification-plugin.git</developerConnection>
+    <url>https://github.com/jenkinsci/agile-cockpit-notification-plugin.git</url>
   </scm>
   <repositories>
     <repository>
