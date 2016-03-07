@@ -15,9 +15,9 @@
   <version>1.0</version>
   <packaging>hpi</packaging>
 
-  <name>Cockpit Notification Plugin</name>
+  <name>Agile Cockpit Notification Plugin</name>
   <description>This plugin can be used by cockpit users to get the Jenkins build information.</description>
-  <url>https://wiki.jenkins-ci.org/display/JENKINS/Cockpit+Notification+Plugin</url>
+  <url>https://wiki.jenkins-ci.org/display/JENKINS/Agile+Cockpit+Notification+Plugin</url>
   <developers>
     <developer>
       <id>prakashan</id>
@@ -26,9 +26,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:https://github.com/prakashan-prowareness/cockpit-notification-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:prakashan-prowareness/cockpit-notification-plugin.git</developerConnection>
-    <url>https://github.com/prakashan-prowareness/cockpit-notification-plugin</url>
+    <connection>scm:git:https://github.com/prakashan-prowareness/agile-cockpit-notification-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:prakashan-prowareness/agile-cockpit-notification-plugin.git</developerConnection>
+    <url>https://github.com/prakashan-prowareness/agile-cockpit-notification-plugin</url>
   </scm>
   <repositories>
     <repository>
