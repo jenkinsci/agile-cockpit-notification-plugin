@@ -20,14 +20,14 @@
   <url>https://wiki.jenkins-ci.org/display/JENKINS/Agile+Cockpit+Notification+Plugin</url>
   <developers>
     <developer>
-      <id>prakashan</id>
+      <id>prakashan_prowareness</id>
       <name>Prakasha Nagaraju</name>
       <email>n.prakasha@prowareness.nl</email>
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:https://github.com/jenkinsci/agile-cockpit-notification-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/agile-cockpit-notification-plugin.git</developerConnection>
+    <connection>scm:git:ssh://github.com/jenkinsci/agile-cockpit-notification-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/jenkinsci/agile-cockpit-notification-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/agile-cockpit-notification-plugin.git</url>
   </scm>
   <repositories>
